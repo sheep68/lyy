@@ -7,11 +7,11 @@ let clickCount = 0;  // 记录点击 No 的次数
 
 // No 按钮的文字变化
 const noTexts = [
-    "？你必须爱她…", 
+    "你必须爱阿玥…", 
     "必须爱阿玥？", 
-    "不许选这个！ ", 
-    "我会很伤心…", 
-    "不行:("
+    "不许不爱阿玥！ ", 
+    "阿玥很伤心…", 
+    "←--必须选爱阿玥"
 ];
 
 // No 按钮点击事件
@@ -37,11 +37,11 @@ noButton.addEventListener("click", function() {
     }
 
     // 图片变化（前 5 次变化）
-    if (clickCount === 1) mainImage.src = "https://pic1.zhimg.com/100/v2-0c1dc2db760e40a0ffa25a31a4e43aca_r.jpg"; // 震惊
-    if (clickCount === 2) mainImage.src = "https://pic1.zhimg.com/100/v2-32e2a48d73e4cbda5eeef3a91ff59550_r.jpg";   // 思考
-    if (clickCount === 3) mainImage.src = "https://picx.zhimg.com/100/v2-992fe10d73f55ad6328efda81eb9f65f_r.jpg";   // 生气
-    if (clickCount === 4) mainImage.src = "https://picx.zhimg.com/100/v2-a2ef8212231ad4325dfb087875a36335_r.jpg";  // 哭
-    if (clickCount >= 5) mainImage.src = "https://picx.zhimg.com/100/v2-a2ef8212231ad4325dfb087875a36335_r.jpg";  // 之后一直是哭
+    if (clickCount === 1) mainImage.src = "https://img.keaitupian.cn/newupload/12/1670920527759404.jpg"; // 震惊
+    if (clickCount === 2) mainImage.src = "https://img.keaitupian.cn/newupload/10/1634713060178482.jpg";   // 思考
+    if (clickCount === 3) mainImage.src = "https://ts1.cn.mm.bing.net/th/id/R-C.e1bfd7fdaa88095f489826237b16b74c?rik=7nCfAbmKJOG%2fbw&riu=http%3a%2f%2fn.sinaimg.cn%2ffront%2f480%2fw640h640%2f20181113%2fmtp9-hnvukfe4971040.jpg&ehk=GkYlujkRb3NRU4ejwCazLKC3KjBqyNm602vw%2f8108Ws%3d&risl=&pid=ImgRaw&r=0";   // 生气
+    if (clickCount === 4) mainImage.src = "https://tse4-mm.cn.bing.net/th/id/OIP-C.pekHTXotLp63q_zuFm5Q7wAAAA?rs=1&pid=ImgDetMain";  // 哭
+    if (clickCount >= 5) mainImage.src = "https://pic.616pic.com/ys_img/00/15/44/tis3O0ZY27.jpg";  // 之后一直是哭
 
 });
 
@@ -49,8 +49,8 @@ noButton.addEventListener("click", function() {
 yesButton.addEventListener("click", function() {
     document.body.innerHTML = `
         <div class="yes-screen">
-            <h1 class="yes-text">!!!真听话!!乖儿子 ( >᎑<)♡︎ᐝ</h1>
-            <img src="https://pic2.zhimg.com/100/v2-4d99a96f80c87fde861221f104604879_r.jpg" alt="拥抱" class="yes-image">
+            <h1 class="yes-text">爱死了!!!!!世界上最可爱的阿玥小姐❥(^_-)</h1>
+            <img src="agree.jpg" alt="拥抱" class="yes-image">
         </div>
     `;
 
