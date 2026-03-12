@@ -1,12 +1,12 @@
-let   让   让   让   让   让   让   让   让   让 yesButton = document               文档文档文档文档文档.getElementById("yes");
-let   让   让   让   让   让   让   让   让 noButton = document               文档文档文档文档文档.getElementById("no");
-let   让   让   让   让   让   让   让   让   让 questionText = document            文档文档文档文档.getElementById("question");
-let   让   让   让   让   让   让   让   让   让 mainImage = document            文档文档文档文档.getElementById("mainImage");let   让   让   让   让   让   让   让   让   让 mainImage = document            文档文档文档文档.getElementById("mainImage");
+let yesButton = document.getElementById("yes");
+let noButton = document.getElementById("no");
+let questionText = document.getElementById("question");
+let mainImage = document.getElementById("mainImage");let mainImage = document.getElementById("mainImage");
 
-let   让   让   让   让   让   让   让   让   让 clickCount = 0;  // 记录点击 No 的次数
+let clickCount = 0;  // 记录点击 No 的次数
 
 // No 按钮的文字变化
-const   常量 noTexts = [
+const noTexts = [
     "你必须爱陈俞霖…", 
     "必须爱陈俞霖!!", 
     "不许不爱陈俞霖！ ", 
@@ -19,15 +19,15 @@ noButton.addEventListener("click", function() {noButton.addEventListener("click"
     clickCount++;
 
     // 让 Yes 变大，每次放大 2 倍
-    let   让   让   让   让   让   让   让   让   让 yesSize = 1 + (clickCount * 1.2);设yesSize = 1（点击数* 1.2）；
+    let yesSize = 1 + (clickCount * 1.2);设yesSize = 1（点击数* 1.2）；
     yesButton.style.transform = `scale(${yesSize})`;
 
     // 挤压 No 按钮，每次右移 100px
-    let   让   让   让   让   让   让   让   让   让 noOffset = clickCount * 50;let   让   让   让   让   让   让   让   让   让 noOffset =点击次数* 50；
+    let noOffset = clickCount * 50;let noOffset =点击次数* 50；
     noButton.style.transform = `translateX(${noOffset}px)`;noButton.style.transform = ' translateX(${noOffset}px) '；
 
     // **新增：让图片和文字往上移动**
-    let   让   让   让   让   让   让   让   让 moveUp = clickCount * 25; // 每次上移 20px
+    let moveUp = clickCount * 25; // 每次上移 20px
     mainImage.style.transform = `translateY(-${moveUp}px)`;mainImage.style.transform = ' translateY(-${moveUp}px) '；
     questionText.style.transform = `translateY(-${moveUp}px)`;questionText.style.transform = ' translateY(-${moveUp}px) '；
 
@@ -49,14 +49,14 @@ ewupload/10/1634713060178482.jpg"；// 思考
 
 // Yes 按钮点击后，进入表白成功页面
 yesButton.addEventListener("click", function() {yesButton.addEventListener("click", function() {
-    document               文档文档文档文档文档.body.innerHTML = `
-        <div class="yes-screen">   <div class="yes-screen"><div class="yes-screen">   <div class="yes-screen"><div class="yes-screen">   <div class="yes-screen"><div class="yes-screen">   <div class="yes-screen"><div class="yes-screen">   <div class="yes-screen"><div class="yes-screen">   <div class="yes-screen"><div class="yes-screen">   <div class="yes-screen">
+    document.body.innerHTML = `
+        <div class="yes-screen">   <div class="yes-screen">
             <h1 class="yes-text">爱死了!!!!!世界上最可爱的陈俞霖❥(^_-)</h1>
             <img src="agree.jpg" alt="拥抱" class="yes-image">
         </div>
     `;
 
-    document               文档文档文档文档文档.body.style.overflow = "hidden";document               文档文档文档文档文档.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";document.body.style.overflow = "hidden";
 });
 
 
