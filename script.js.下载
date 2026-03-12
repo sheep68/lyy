@@ -41,7 +41,7 @@ noButton.addEventListener("click", function() {
     if (clickCount === 2) mainImage.src = "https://img.keaitupian.cn/newupload/10/1634713060178482.jpg";   // 思考
     if (clickCount === 3) mainImage.src = "https://ts1.cn.mm.bing.net/th/id/R-C.e1bfd7fdaa88095f489826237b16b74c?rik=7nCfAbmKJOG%2fbw&riu=http%3a%2f%2fn.sinaimg.cn%2ffront%2f480%2fw640h640%2f20181113%2fmtp9-hnvukfe4971040.jpg&ehk=GkYlujkRb3NRU4ejwCazLKC3KjBqyNm602vw%2f8108Ws%3d&risl=&pid=ImgRaw&r=0";   // 生气
     if (clickCount === 4) mainImage.src = "https://tse4-mm.cn.bing.net/th/id/OIP-C.pekHTXotLp63q_zuFm5Q7wAAAA?rs=1&pid=ImgDetMain";  // 哭
-    if (clickCount >= 5) mainImage.src = "https://pic.616pic.com/ys_img/00/15/44/tis3O0ZY27.jpg";  // 之后一直是哭
+    if (clickCount >= 5) mainImage.src = "https://tse4-mm.cn.bing.net/th/id/OIP-C.pekHTXotLp63q_zuFm5Q7wAAAA?rs=1&pid=ImgDetMain";  // 之后一直是哭
 
 });
 
@@ -56,4 +56,5 @@ yesButton.addEventListener("click", function() {
 
     document.body.style.overflow = "hidden";
 });
+
 
