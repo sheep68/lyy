@@ -7,11 +7,11 @@ let clickCount = 0;  // 记录点击 No 的次数
 
 // No 按钮的文字变化
 const noTexts = [
-    "你必须爱阿玥…", 
-    "必须爱阿玥？", 
-    "不许不爱阿玥！ ", 
-    "阿玥很伤心…", 
-    "←--必须选爱阿玥"
+    "你必须爱陈俞霖…", 
+    "必须爱陈俞霖!!", 
+    "不许不爱陈俞霖！ ", 
+    "陈俞霖很伤心…", 
+    "←--必须选爱陈俞霖"
 ];
 
 // No 按钮点击事件
@@ -49,10 +49,11 @@ noButton.addEventListener("click", function() {
 yesButton.addEventListener("click", function() {
     document.body.innerHTML = `
         <div class="yes-screen">
-            <h1 class="yes-text">爱死了!!!!!世界上最可爱的阿玥小姐❥(^_-)</h1>
+            <h1 class="yes-text">爱死了!!!!!世界上最可爱的陈俞霖❥(^_-)</h1>
             <img src="agree.jpg" alt="拥抱" class="yes-image">
         </div>
     `;
 
     document.body.style.overflow = "hidden";
 });
+
